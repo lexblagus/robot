@@ -368,10 +368,9 @@ export default {
 					start: [12, 2000],
 					end: [11, 2002],
 				},
-				// <!>
 				title: 'Software developer',
-				sector: 'Manufacturer of high-quality seat belts for the automotive industry',
-				about: '',
+				sector: 'Automotive Components Manufacturing',
+				about: 'Manufacturer of high-quality seat belts for the automotive industry',
 				clients: [],
 				attributions: [],
 				achievements: [

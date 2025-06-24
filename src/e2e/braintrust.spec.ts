@@ -2,7 +2,7 @@ import React from 'react';
 import { test, expect } from '@playwright/test';
 import { chromium } from 'playwright';
 import credentials from '../../secret/braintrust';
-import contents from '../constants/contents';
+import resume from '../contents/resume';
 import ReactDOMServer from 'react-dom/server';
 
 
@@ -59,8 +59,8 @@ test.skip('Fillup Braintrust Work history', async () => {
 	// Add experience
 	await page.click('button:has-text("Add work history")');
 
-	for (let i = 0; i < contents.experience.data.reverse().length; i++) {
-		const experience = contents.experience.data[i];
+	for (let i = 0; i < resume.experience.data.reverse().length; i++) {
+		const experience = resume.experience.data[i];
 		console.log(i, experience.company);
 		
 		// Add job

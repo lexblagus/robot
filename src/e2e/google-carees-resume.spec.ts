@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { chromium } from 'playwright';
-import contents from '../constants/contents';
+import resume from '../contents/resume';
 import credentials from '../../secret/google';
 
 test.skip('Fillup Google Application profile', async () => {
@@ -45,8 +45,8 @@ test.skip('Fillup Google Application profile', async () => {
 	
 	// Experiences
 	const locatorJobs = locatorWorkExperience.locator('> div > div > ul');
-	for (let i = 0; i < contents.experience.data.length; i++) {
-		const experience = contents.experience.data[i];
+	for (let i = 0; i < resume.experience.data.length; i++) {
+		const experience = resume.experience.data[i];
 		console.log(i, experience.company);
 
 		// Add job

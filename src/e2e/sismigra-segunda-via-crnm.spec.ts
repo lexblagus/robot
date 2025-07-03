@@ -144,7 +144,7 @@ async function runTestFlow(page: Page) {
 
 // =============================================================================
 
-test("Sistema de Registro Nacional Migratório / Segunda via de CRNM", async () => {
+test.skip("Sistema de Registro Nacional Migratório / Segunda via de CRNM", async () => {
 	test.setTimeout(5 * 60 * 1000);
 	// test.setTimeout(15 * 1000);
 

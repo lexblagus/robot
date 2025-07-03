@@ -6,7 +6,7 @@
   "scripts": {
     "start": "playwright test --headed"
   },
-  "author": "Lex Blagus <lex@blag.us>",
+  "author": "Lexa Blagus <lex@blag.us>",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.2",
